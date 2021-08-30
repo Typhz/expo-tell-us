@@ -1,32 +1,40 @@
 {
   "expo": {
-    "name": "tell-us",
+    "name": "Tell us",
     "slug": "tell-us",
     "version": "1.0.0",
+    "githubUrl": "https://github.com/Coding-in-community/expo-tell-us",
     "orientation": "portrait",
+    "backgroundColor": "#F3FDFB",
+    "primaryColor": "#55D9B4",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "translucent": true
+    },
+    "androidNavigationBar": {
+      "visible": "sticky-immersive",
+      "barStyle": "dark-content",
+      "backgroundColor": "#F3FDFB"
+    },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F3FDFB"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "enabled": false
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#F3FDFB"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     }
   }
 }
