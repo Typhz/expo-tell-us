@@ -9,6 +9,7 @@ export const Container = styled.View`
 `;
 
 export const Text = styled.Text`
+  font-family: RobotoSlab_400Regular;
   font-size: 16px;
   color: ${colors.text};
 `;
