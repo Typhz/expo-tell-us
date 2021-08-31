@@ -5,7 +5,7 @@ import {
   RobotoSlab_400Regular,
   RobotoSlab_500Medium,
 } from '@expo-google-fonts/roboto-slab';
-import Home from './screens/Home';
+import { HomeScreen } from '@screens/';
 
 function App() {
   let [fontsLoaded] = useFonts({ RobotoSlab_400Regular, RobotoSlab_500Medium });
@@ -14,7 +14,7 @@ function App() {
     return <AppLoading />;
   }
 
-  return <Home />;
+  return <HomeScreen />;
 }
 
 export default App;
