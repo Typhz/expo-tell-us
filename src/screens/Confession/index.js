@@ -4,7 +4,7 @@ import { Container, Text } from './styles';
 function Home() {
   return (
     <Container>
-      <Text>Home</Text>
+      <Text>Confession</Text>
     </Container>
   );
 }
