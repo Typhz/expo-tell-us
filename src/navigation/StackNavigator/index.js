@@ -3,7 +3,6 @@ import {
   createStackNavigator,
   CardStyleInterpolators,
 } from '@react-navigation/stack';
-
 import { Confession, Home, MakeConfession } from '@screens/';
 
 const { Navigator, Screen } = createStackNavigator();
@@ -17,7 +16,7 @@ function StackNavigator() {
         cardStyle: { backgroundColor: 'transparent' },
         cardShadowEnabled: false,
         cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
-        gestureEnabled: true,
+        gestureEnabled: false,
         gestureDirection: 'horizontal',
       }}
     >
