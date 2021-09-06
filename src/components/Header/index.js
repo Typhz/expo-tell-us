@@ -10,11 +10,11 @@ import {
   Left,
 } from './styles';
 
-function Header({ title, onBackward, style, titleStyle }) {
+function Header({ dismiss, title, onBackward, style, titleStyle }) {
   const { goBack } = useNavigation();
 
   return (
-    <Container style={style}>
+    <Container style={style} dismiss={dismiss}>
       <Left>
         <BackwardButton onPress={() => (onBackward ? onBackward() : goBack())}>
           <BackwardIcon />

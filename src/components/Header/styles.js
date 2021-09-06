@@ -1,10 +1,17 @@
 import styled from 'styled-components/native';
+import { BorderlessButton } from 'react-native-gesture-handler';
+import { MotiSafeAreaView } from 'moti';
 import { StatusBar } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '@styles/';
-import { BorderlessButton } from 'react-native-gesture-handler';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled(MotiSafeAreaView).attrs((props) => ({
+  animate: { top: props.dismiss ? -100 : 0 },
+  transition: {
+    type: 'timing',
+    duration: 450,
+  },
+}))`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
