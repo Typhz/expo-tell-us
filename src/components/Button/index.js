@@ -1,13 +1,12 @@
 import React from 'react';
-import { Container, Text, Wrapper } from './styles';
+import { Text, Container } from './styles';
 
-function Button({ title, style, ...rest }) {
+function Button({ children, title, style, ...rest }) {
   return (
-    <Wrapper style={style} {...rest}>
-      <Container>
-        <Text>{title}</Text>
-      </Container>
-    </Wrapper>
+    <Container style={style} {...rest}>
+      <Text>{title}</Text>
+      {children}
+    </Container>
   );
 }
 

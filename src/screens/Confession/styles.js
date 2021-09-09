@@ -29,7 +29,11 @@ export const Text = styled.Text.attrs({
   font-size: 14px;
 `;
 
-export const NextConfessionButton = styled.TouchableOpacity`
+export const NextConfessionButton = styled.Pressable.attrs({
+  android_ripple: {
+    color: colors.background,
+  },
+})`
   background-color: ${colors.primary};
   border-radius: 40px;
   bottom: ${screenHeight * 0.35}px;
@@ -78,7 +82,13 @@ export const ConfessionInfo = styled.View`
   flex-direction: row;
 `;
 
-export const IconButton = styled.TouchableOpacity`
+export const IconButton = styled.Pressable.attrs({
+  android_ripple: {
+    color: colors.background,
+    borderless: true,
+  },
+  hitSlop: 6,
+})`
   flex-direction: row;
   justify-content: center;
 `;

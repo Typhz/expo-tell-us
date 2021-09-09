@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { BorderlessButton } from 'react-native-gesture-handler';
 import { MotiSafeAreaView } from 'moti';
 import { StatusBar } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -27,16 +26,23 @@ export const Center = styled.View``;
 
 export const Right = styled.View``;
 
+export const BackwardButton = styled.Pressable.attrs({
+  android_ripple: {
+    color: colors.primary,
+    borderless: true,
+  },
+  hitSlop: 6,
+})`
+  align-items: center;
+  justify-content: center;
+  left: -6px;
+`;
+
 export const BackwardIcon = styled(Ionicons).attrs({
   name: 'chevron-back',
   size: 22,
   color: colors.text,
 })``;
-
-export const BackwardButton = styled(BorderlessButton)`
-  align-items: center;
-  justify-content: center;
-`;
 
 export const Title = styled.Text`
   font-family: RobotoSlab_500Medium;
