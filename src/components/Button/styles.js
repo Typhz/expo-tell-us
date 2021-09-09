@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
-import { shade, tint } from 'polished';
+import { tint } from 'polished';
 import { colors } from '@styles/';
 
 export const Wrapper = styled(RectButton).attrs((props) => ({
@@ -12,10 +12,6 @@ export const Wrapper = styled(RectButton).attrs((props) => ({
   background-color: ${({ primary }) =>
     primary ? colors.primary : colors.background};
   border-radius: 8px;
-  elevation: 5;
-  shadow-offset: 0px 2px;
-  shadow-color: ${shade(0.1, colors.primary)};
-  shadow-radius: 8px;
 `;
 
 export const Container = styled.View`
@@ -24,7 +20,7 @@ export const Container = styled.View`
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  border: 1px solid ${shade(0.1, colors.primary)};
+  border: 1px solid ${colors.primary};
 `;
 
 export const Text = styled.Text`
